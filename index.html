@@ -228,61 +228,75 @@
 // ====================== ДАННЫЕ КАТАЛОГА ======================
 // Единственное место, которое нужно редактировать для изменения цен.
 const CATALOG = {
-  "updatedAt": "2026-06-24",
+  "updatedAt": "2026-07-09",
   "products": [
-    { "id": "ip15-128-blue-in", "model": "iPhone 15", "storage": "128GB", "color": "Blue", "colorHex": "#7C90A5", "price": 54000, "country": "IN", "status": null },
-    { "id": "ip15-128-black-in", "model": "iPhone 15", "storage": "128GB", "color": "Black", "colorHex": "#2B2B2E", "price": 53500, "country": "IN", "status": "open-box" },
-    { "id": "ip15plus-256-green-in", "model": "iPhone 15 Plus", "storage": "256GB", "color": "Green", "colorHex": "#A3B79A", "price": 62000, "country": "IN", "status": null },
-    { "id": "ip16e-256-white-in", "model": "iPhone 16e", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 57000, "country": "IN", "status": null },
-    { "id": "ip16-128-ultra-in", "model": "iPhone 16", "storage": "128GB", "color": "Ultra", "colorHex": "#4A4E58", "price": 53600, "country": "IN", "status": "pre-active" },
-    { "id": "ip16max-256-white-in", "model": "iPhone 16 Max", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 104000, "country": "IN", "status": null },
-    { "id": "ip16max-256-white-us", "model": "iPhone 16 Max", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 91000, "country": "US", "status": null },
-    { "id": "ip16max-256-natural-us", "model": "iPhone 16 Max", "storage": "256GB", "color": "Natural", "colorHex": "#B8AFA0", "price": 91000, "country": "US", "status": null },
-    { "id": "ip16max-256-desert-us", "model": "iPhone 16 Max", "storage": "256GB", "color": "Desert", "colorHex": "#C9A876", "price": 91000, "country": "US", "status": null },
-    { "id": "ip17-256-sage-jp", "model": "iPhone 17", "storage": "256GB", "color": "Sage", "colorHex": "#AEB99A", "price": 68800, "country": "JP", "status": null },
-    { "id": "ip17-256-black-jp", "model": "iPhone 17", "storage": "256GB", "color": "Black", "colorHex": "#2B2B2E", "price": 70300, "country": "JP", "status": null },
-    { "id": "ip17-256-lavender-jp", "model": "iPhone 17", "storage": "256GB", "color": "Lavender", "colorHex": "#C9C2DC", "price": 69300, "country": "JP", "status": null },
-    { "id": "ip17-256-blue-jp", "model": "iPhone 17", "storage": "256GB", "color": "Blue", "colorHex": "#7C90A5", "price": 68800, "country": "JP", "status": null },
-    { "id": "ip17-256-white-jp", "model": "iPhone 17", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 70300, "country": "JP", "status": null },
-    { "id": "ip17-256-sage-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Sage", "colorHex": "#AEB99A", "price": 67000, "country": "IN", "status": "active" },
-    { "id": "ip17-256-black-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Black", "colorHex": "#2B2B2E", "price": 67000, "country": "IN", "status": "active" },
-    { "id": "ip17-256-lavender-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Lavender", "colorHex": "#C9C2DC", "price": 67000, "country": "IN", "status": "active" },
-    { "id": "ip17-256-blue-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Blue", "colorHex": "#7C90A5", "price": 67000, "country": "IN", "status": "active" },
-    { "id": "ip17-256-white-in-active", "model": "iPhone 17", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 67000, "country": "IN", "status": "active" },
-    { "id": "ip17-256-sage-in", "model": "iPhone 17", "storage": "256GB", "color": "Sage", "colorHex": "#AEB99A", "price": 70500, "country": "IN", "status": null },
-    { "id": "ip17-512-black-jp", "model": "iPhone 17", "storage": "512GB", "color": "Black", "colorHex": "#2B2B2E", "price": 82500, "country": "JP", "status": null },
-    { "id": "ip17-512-lavender-jp", "model": "iPhone 17", "storage": "512GB", "color": "Lavender", "colorHex": "#C9C2DC", "price": 86000, "country": "JP", "status": null },
-    { "id": "ip17pro-256-blue-hk", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 99800, "country": "HK", "status": null },
-    { "id": "ip17pro-256-orange-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 88300, "country": "JP", "status": null },
-    { "id": "ip17pro-256-blue-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 90800, "country": "JP", "status": null },
-    { "id": "ip17pro-256-silver-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 90800, "country": "JP", "status": null },
-    { "id": "ip17pro-512-orange-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 106300, "country": "JP", "status": null },
-    { "id": "ip17pro-512-blue-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 106600, "country": "JP", "status": null },
-    { "id": "ip17pro-512-silver-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 107000, "country": "JP", "status": null },
-    { "id": "ip17pro-512-orange-hk", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 113500, "country": "HK", "status": null },
-    { "id": "ip17pro-512-blue-hk", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 114500, "country": "HK", "status": null },
-    { "id": "ip17pro-1tb-blue-hk-scratch", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 131000, "country": "HK", "status": "scratched-box" },
-    { "id": "ip17pro-1tb-blue-hk-active", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 128000, "country": "HK", "status": "active" },
-    { "id": "ip17pro-1tb-orange-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 122500, "country": "JP", "status": null },
-    { "id": "ip17pro-1tb-blue-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 123000, "country": "JP", "status": null },
-    { "id": "ip17pro-1tb-silver-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 127000, "country": "JP", "status": null },
-    { "id": "ip17max-256-orange-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 107000, "country": "HK", "status": null },
-    { "id": "ip17max-256-blue-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 109500, "country": "HK", "status": null },
-    { "id": "ip17max-256-silver-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 109500, "country": "HK", "status": null },
-    { "id": "ip17max-256-blue-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 95000, "country": "JP", "status": null },
-    { "id": "ip17max-256-silver-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 98000, "country": "JP", "status": null },
-    { "id": "ip17max-512-silver-hk", "model": "iPhone 17 Max", "storage": "512GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 128500, "country": "HK", "status": null },
-    { "id": "ip17max-512-orange-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 114500, "country": "JP", "status": null },
-    { "id": "ip17max-512-blue-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 114500, "country": "JP", "status": null },
-    { "id": "ip17max-512-silver-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 116500, "country": "JP", "status": null },
-    { "id": "ip17max-1tb-orange-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 143000, "country": "HK", "status": null },
-    { "id": "ip17max-1tb-blue-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 142500, "country": "HK", "status": null },
-    { "id": "ip17max-1tb-silver-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 142500, "country": "HK", "status": null },
-    { "id": "ip17max-1tb-orange-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 135000, "country": "JP", "status": null },
-    { "id": "ip17max-1tb-blue-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 130000, "country": "JP", "status": null },
-    { "id": "ip17max-1tb-silver-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 130000, "country": "JP", "status": null },
-    { "id": "ip17max-2tb-orange-jp", "model": "iPhone 17 Max", "storage": "2TB", "color": "Orange", "colorHex": "#C96A3E", "price": 145000, "country": "JP", "status": null },
-    { "id": "ip17max-2tb-blue-jp", "model": "iPhone 17 Max", "storage": "2TB", "color": "Blue", "colorHex": "#4C6178", "price": 151000, "country": "JP", "status": null }
+    { "id": "airpods4anc-us", "model": "AirPods 4 ANC", "storage": "-", "color": "White", "colorHex": "#F2F2F0", "price": 18900, "country": "US", "status": null },
+    { "id": "airpodspro3-hk", "model": "AirPods Pro 3", "storage": "-", "color": "White", "colorHex": "#F2F2F0", "price": 21400, "country": "HK", "status": null },
+    { "id": "airpodspro3-in", "model": "AirPods Pro 3", "storage": "-", "color": "White", "colorHex": "#F2F2F0", "price": 21400, "country": "IN", "status": null },
+
+    { "id": "ip15-128-black-in", "model": "iPhone 15", "storage": "128GB", "color": "Black", "colorHex": "#2B2B2E", "price": 53500, "country": "IN", "status": null },
+    { "id": "ip15-128-blue-in", "model": "iPhone 15", "storage": "128GB", "color": "Blue", "colorHex": "#7C90A5", "price": 53700, "country": "IN", "status": null },
+    { "id": "ip15-128-blue-vn", "model": "iPhone 15", "storage": "128GB", "color": "Blue", "colorHex": "#7C90A5", "price": 53700, "country": "VN", "status": null },
+    { "id": "ip15plus-256-green-mx", "model": "iPhone 15 Plus", "storage": "256GB", "color": "Green", "colorHex": "#A3B79A", "price": 61000, "country": "MX", "status": null },
+
+    { "id": "ip16e-256-white-jp", "model": "iPhone 16e", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 57800, "country": "JP", "status": null },
+
+    { "id": "ip16-128-teal-in", "model": "iPhone 16", "storage": "128GB", "color": "Teal", "colorHex": "#4FA8A0", "price": 58000, "country": "IN", "status": null },
+    { "id": "ip16-128-ultramarine-in", "model": "iPhone 16", "storage": "128GB", "color": "Ultramarine", "colorHex": "#4A6FE3", "price": 58900, "country": "IN", "status": null },
+
+    { "id": "ip16promax-256-desert-us", "model": "iPhone 16 Pro Max", "storage": "256GB", "color": "Desert", "colorHex": "#C9A876", "price": 87700, "country": "US", "status": null },
+    { "id": "ip16promax-256-natural-us", "model": "iPhone 16 Pro Max", "storage": "256GB", "color": "Natural", "colorHex": "#B8AFA0", "price": 90400, "country": "US", "status": null },
+    { "id": "ip16promax-256-white-us", "model": "iPhone 16 Pro Max", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 89700, "country": "US", "status": null },
+
+    { "id": "ip17-256-lavender-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Lavender", "colorHex": "#C9C2DC", "price": 68000, "country": "IN", "status": "active" },
+    { "id": "ip17-256-sage-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Sage", "colorHex": "#AEB99A", "price": 68000, "country": "IN", "status": "active" },
+    { "id": "ip17-256-black-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Black", "colorHex": "#2B2B2E", "price": 69200, "country": "IN", "status": "active" },
+    { "id": "ip17-256-mistblue-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Mist Blue", "colorHex": "#8FA8B8", "price": 68000, "country": "IN", "status": "active" },
+    { "id": "ip17-256-white-in-active", "model": "iPhone 17", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 67700, "country": "IN", "status": "active" },
+    { "id": "ip17-256-sage-in", "model": "iPhone 17", "storage": "256GB", "color": "Sage", "colorHex": "#AEB99A", "price": 71500, "country": "IN", "status": null },
+    { "id": "ip17-256-mistblue-in", "model": "iPhone 17", "storage": "256GB", "color": "Mist Blue", "colorHex": "#8FA8B8", "price": 71400, "country": "IN", "status": null },
+    { "id": "ip17-256-white-in", "model": "iPhone 17", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 71000, "country": "IN", "status": null },
+
+    { "id": "ip17pro-256-orange-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 89000, "country": "JP", "status": null },
+    { "id": "ip17pro-256-blue-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 89500, "country": "JP", "status": null },
+    { "id": "ip17pro-256-silver-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 90600, "country": "JP", "status": null },
+    { "id": "ip17pro-256-orange-hk", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 98600, "country": "HK", "status": null },
+    { "id": "ip17pro-256-blue-hk", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 98900, "country": "HK", "status": null },
+    { "id": "ip17pro-256-silver-hk", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 98700, "country": "HK", "status": null },
+
+    { "id": "ip17pro-512-orange-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 107000, "country": "JP", "status": null },
+    { "id": "ip17pro-512-blue-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 107000, "country": "JP", "status": null },
+    { "id": "ip17pro-512-silver-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 108000, "country": "JP", "status": null },
+    { "id": "ip17pro-512-blue-hk", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 114900, "country": "HK", "status": null },
+    { "id": "ip17pro-512-silver-hk", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 117000, "country": "HK", "status": null },
+
+    { "id": "ip17pro-1tb-orange-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 124000, "country": "JP", "status": null },
+    { "id": "ip17pro-1tb-blue-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 123500, "country": "JP", "status": null },
+    { "id": "ip17pro-1tb-silver-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 124500, "country": "JP", "status": null },
+    { "id": "ip17pro-1tb-orange-hk", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 128200, "country": "HK", "status": null },
+    { "id": "ip17pro-1tb-blue-hk", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 129000, "country": "HK", "status": null },
+
+    { "id": "ip17max-256-orange-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 96300, "country": "JP", "status": null },
+    { "id": "ip17max-256-blue-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 96300, "country": "JP", "status": null },
+    { "id": "ip17max-256-silver-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 97000, "country": "JP", "status": null },
+    { "id": "ip17max-256-orange-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 108300, "country": "HK", "status": null },
+    { "id": "ip17max-256-blue-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 108500, "country": "HK", "status": null },
+    { "id": "ip17max-256-silver-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 109700, "country": "HK", "status": null },
+
+    { "id": "ip17max-512-orange-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 114700, "country": "JP", "status": null },
+    { "id": "ip17max-512-blue-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 114000, "country": "JP", "status": null },
+    { "id": "ip17max-512-silver-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 114500, "country": "JP", "status": null },
+    { "id": "ip17max-512-orange-hk", "model": "iPhone 17 Max", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 126500, "country": "HK", "status": null },
+    { "id": "ip17max-512-blue-hk", "model": "iPhone 17 Max", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 124400, "country": "HK", "status": null },
+
+    { "id": "ip17max-1tb-orange-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 129500, "country": "JP", "status": null },
+    { "id": "ip17max-1tb-blue-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 130500, "country": "JP", "status": null },
+    { "id": "ip17max-1tb-silver-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 129500, "country": "JP", "status": null },
+    { "id": "ip17max-1tb-orange-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 144000, "country": "HK", "status": null },
+    { "id": "ip17max-1tb-blue-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 144000, "country": "HK", "status": null },
+    { "id": "ip17max-1tb-silver-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 143000, "country": "HK", "status": null },
+
+    { "id": "ip17max-2tb-cosmicorange-jp", "model": "iPhone 17 Max", "storage": "2TB", "color": "Cosmic Orange", "colorHex": "#C96A3E", "price": 146000, "country": "JP", "status": null }
   ]
 };
 
@@ -293,6 +307,8 @@ const COUNTRY_META = {
   JP: { flag: '🇯🇵', label: 'Япония' },
   HK: { flag: '🇭🇰', label: 'Гонконг' },
   US: { flag: '🇺🇸', label: 'США' },
+  VN: { flag: '🇻🇳', label: 'Вьетнам' },
+  MX: { flag: '🇲🇽', label: 'Мексика' },
 };
 const STATUS_META = {
   'active': { label: 'Актив', cls: 'badge-success' },
@@ -300,7 +316,7 @@ const STATUS_META = {
   'open-box': { label: 'Открытый неактив', cls: 'badge-muted' },
   'scratched-box': { label: 'Царапаные коробки', cls: 'badge-danger' },
 };
-const MODEL_FILTERS = ['iPhone 15', 'iPhone 15 Plus', 'iPhone 16e', 'iPhone 16', 'iPhone 16 Max', 'iPhone 17', 'iPhone 17 Pro', 'iPhone 17 Max'];
+const MODEL_FILTERS = ['iPhone 15', 'iPhone 15 Plus', 'iPhone 16e', 'iPhone 16', 'iPhone 16 Pro Max', 'iPhone 17', 'iPhone 17 Pro', 'iPhone 17 Max', 'AirPods 4 ANC', 'AirPods Pro 3'];
 
 // ====================== TELEGRAM WEBAPP ======================
 const tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
@@ -361,6 +377,41 @@ function escapeHtml(str) {
 
 // ====================== ИЛЛЮСТРАЦИЯ УСТРОЙСТВА (SVG) ======================
 // Оригинальная графика вместо официальных фото Apple (авторские права).
+
+// Определяем, iPhone это или AirPods, чтобы выбрать нужную иллюстрацию.
+function isAirPods(model) {
+  return model.indexOf('AirPods') === 0;
+}
+
+// Иллюстрация кейса AirPods с наушниками — своя оригинальная графика.
+function airpodsGlyph(extraClass) {
+  return `
+  <svg viewBox="0 0 240 480" class="${extraClass || ''}" role="img" aria-label="Иллюстрация AirPods">
+    <defs>
+      <linearGradient id="apcase" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#F5F5F7" stop-opacity="0.98"/>
+        <stop offset="100%" stop-color="#E4E4E7" stop-opacity="0.9"/>
+      </linearGradient>
+      <linearGradient id="apshine" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <!-- кейс -->
+    <rect x="55" y="150" width="130" height="170" rx="40" fill="url(#apcase)" stroke="rgba(0,0,0,0.1)" stroke-width="2"/>
+    <rect x="55" y="150" width="130" height="80" rx="40" fill="url(#apshine)"/>
+    <circle cx="120" cy="175" r="4" fill="rgba(0,0,0,0.25)"/>
+    <rect x="112" y="148" width="16" height="6" rx="3" fill="rgba(0,0,0,0.12)"/>
+    <!-- наушники внутри -->
+    <g opacity="0.95">
+      <rect x="80" y="200" width="26" height="60" rx="13" fill="#fff" stroke="rgba(0,0,0,0.08)"/>
+      <rect x="88" y="192" width="10" height="30" rx="5" fill="#fff" stroke="rgba(0,0,0,0.08)"/>
+      <rect x="134" y="200" width="26" height="60" rx="13" fill="#fff" stroke="rgba(0,0,0,0.08)"/>
+      <rect x="142" y="192" width="10" height="30" rx="5" fill="#fff" stroke="rgba(0,0,0,0.08)"/>
+    </g>
+  </svg>`;
+}
+
 function deviceGlyph(colorHex, isPro, extraClass) {
   const gid = 'g' + colorHex.replace('#', '');
   const cam = isPro
@@ -452,10 +503,11 @@ function renderHome() {
 function cardHtml(p, i) {
   const country = COUNTRY_META[p.country];
   const isPro = p.model.includes('Pro');
+  const glyph = isAirPods(p.model) ? airpodsGlyph('card-glyph') : deviceGlyph(p.colorHex, isPro, 'card-glyph');
   const badge = p.status ? `<span class="badge ${STATUS_META[p.status].cls}">${STATUS_META[p.status].label}</span>` : '';
   return `
     <button class="card" data-product-id="${p.id}" style="animation-delay:${Math.min(i * 0.03, 0.3)}s">
-      <div class="card-glyph">${deviceGlyph(p.colorHex, isPro, 'card-glyph')}</div>
+      <div class="card-glyph">${glyph}</div>
       <div class="card-body">
         <div class="card-title-row"><h3>${escapeHtml(p.model)}</h3><span class="card-storage">${escapeHtml(p.storage)}</span></div>
         <p class="card-sub">${escapeHtml(p.color)} · ${country.flag} ${country.label}</p>
@@ -475,6 +527,7 @@ function renderDetail(productId) {
   }
   const country = COUNTRY_META[p.country];
   const isPro = p.model.includes('Pro');
+  const glyph = isAirPods(p.model) ? airpodsGlyph('') : deviceGlyph(p.colorHex, isPro, '');
   const statusRow = p.status
     ? `<div class="detail-row"><span class="label">Статус</span><span class="badge ${STATUS_META[p.status].cls}">${STATUS_META[p.status].label}</span></div>`
     : `<div class="detail-row"><span class="label">Статус</span><span class="value">Новый, запечатан</span></div>`;
@@ -486,7 +539,7 @@ function renderDetail(productId) {
         Назад
       </button>
 
-      <div class="hero">${deviceGlyph(p.colorHex, isPro, '')}</div>
+      <div class="hero">${glyph}</div>
 
       <div class="detail-body">
         <div class="detail-title-row">
