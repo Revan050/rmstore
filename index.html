@@ -48,7 +48,16 @@
     border-bottom: 1px solid var(--border);
     animation: fadeDown .5s ease-out both;
   }
+  .brand-row { display: flex; align-items: center; justify-content: space-between; }
   .brand { display: flex; align-items: center; gap: 10px; }
+  .reviews-nav-btn {
+    display: flex; align-items: center; gap: 5px;
+    border: 1px solid var(--border); background: var(--chip-bg);
+    border-radius: 999px; padding: 7px 12px; font-size: 13px; font-weight: 500;
+    color: var(--ink); cursor: pointer;
+  }
+  .reviews-nav-btn svg { color: var(--warn); flex-shrink: 0; }
+  .reviews-nav-btn:active { background: color-mix(in srgb, var(--ink) 6%, transparent); }
   .brand-icon {
     width: 36px; height: 36px; border-radius: 16px;
     background: linear-gradient(135deg, #2b2b2e, #57575c);
@@ -211,6 +220,87 @@
   }
   .btn-order:active { transform: scale(0.98); }
 
+  /* Reviews page */
+  .reviews-page { padding: 24px 20px 40px; animation: fadeIn .3s ease-out; }
+  .reviews-title-row { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 16px; }
+  .reviews-title-row h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; margin: 0; }
+  .reviews-avg { display: flex; align-items: center; gap: 4px; font-size: 14px; color: var(--muted); font-weight: 500; }
+  .reviews-avg svg { color: var(--warn); }
+
+  .review-card {
+    border: 1px solid var(--border); background: var(--surface);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px; padding: 16px; margin-bottom: 10px;
+    box-shadow: 0 8px 32px rgba(31,38,135,0.08);
+    animation: fadeUp .4s ease-out both;
+  }
+  .review-head { display: flex; align-items: center; gap: 10px; }
+  .review-avatar {
+    width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #7C90A5, #4C6178);
+    color: #fff; font-size: 15px; font-weight: 600;
+  }
+  .review-name-col { min-width: 0; flex: 1; }
+  .review-name {
+    font-size: 14px; font-weight: 600; color: var(--ink);
+    text-decoration: none; display: inline-flex; align-items: center; gap: 4px;
+  }
+  .review-name svg { width: 12px; height: 12px; color: var(--accent); flex-shrink: 0; }
+  .review-date { font-size: 12px; color: var(--muted); margin-top: 1px; }
+  .review-stars { display: flex; gap: 2px; flex-shrink: 0; }
+  .review-stars svg { width: 13px; height: 13px; }
+  .star-filled { color: var(--warn); fill: var(--warn); }
+  .star-empty { color: var(--border); fill: none; }
+  .review-text { margin: 10px 0 0; font-size: 14px; line-height: 1.45; color: var(--ink); }
+
+  .leave-review-btn {
+    width: 100%; margin-top: 6px; display: flex; align-items: center; justify-content: center; gap: 8px;
+    background: var(--ink); color: var(--bg); border: none; border-radius: 16px;
+    padding: 14px; font-size: 15px; font-weight: 600; cursor: pointer;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+  }
+  .leave-review-btn:active { transform: scale(0.98); }
+
+  .review-form {
+    border: 1px solid var(--border); background: var(--surface);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px; padding: 16px; margin-top: 6px;
+    animation: fadeUp .35s ease-out;
+  }
+  .review-form label { display: block; font-size: 12px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; margin: 12px 0 6px; }
+  .review-form label:first-child { margin-top: 0; }
+  .review-form input[type="text"], .review-form textarea {
+    width: 100%; border: 1px solid var(--border); background: var(--bg);
+    border-radius: 14px; padding: 11px 13px; font-size: 14px; color: var(--ink); outline: none;
+  }
+  .review-form textarea { min-height: 90px; resize: vertical; font-family: inherit; }
+  .review-form input:focus, .review-form textarea:focus { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent); }
+
+  .star-picker { display: flex; gap: 6px; }
+  .star-pick-btn { background: none; border: none; padding: 2px; cursor: pointer; }
+  .star-pick-btn svg { width: 26px; height: 26px; transition: transform .1s; }
+  .star-pick-btn:active svg { transform: scale(0.85); }
+
+  .review-form-actions { display: flex; gap: 10px; margin-top: 16px; }
+  .review-form-actions .btn-cancel {
+    flex-shrink: 0; border: 1px solid var(--border); background: transparent; border-radius: 14px;
+    padding: 12px 16px; font-size: 14px; font-weight: 500; color: var(--ink); cursor: pointer;
+  }
+  .review-form-actions .btn-submit {
+    flex: 1; background: var(--accent); color: #fff; border: none; border-radius: 14px;
+    padding: 12px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .review-form-actions .btn-submit:disabled { opacity: 0.5; }
+
+  .toast {
+    position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%) translateY(20px);
+    background: var(--ink); color: var(--bg); font-size: 13px; font-weight: 500;
+    padding: 11px 18px; border-radius: 999px; box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    opacity: 0; pointer-events: none; transition: all .25s ease-out; z-index: 50; white-space: nowrap;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
   @keyframes fadeDown { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -302,6 +392,37 @@ const CATALOG = {
 
 const ORDER_USERNAME = 'rmmrq';
 
+// ====================== ОТЗЫВЫ ======================
+// Сюда вручную добавляй одобренные отзывы, которые люди присылают тебе в Telegram.
+// "username" — это Telegram-юзернейм БЕЗ собачки (@), просто буквы. Если человек
+// не присылал username — оставь пустую строку "", тогда имя будет без ссылки на профиль.
+const REVIEWS = [
+  {
+    id: 'r1',
+    name: 'Артём',
+    username: 'artemsmith',
+    rating: 5,
+    text: 'Заказывал 17 Pro, всё пришло быстро и как в описании. Продавец на связи, отвечает сразу.',
+    date: '2026-06-20',
+  },
+  {
+    id: 'r2',
+    name: 'Диана',
+    username: '',
+    rating: 5,
+    text: 'Второй раз покупаю здесь технику — всё честно, без обмана по комплектации.',
+    date: '2026-06-15',
+  },
+  {
+    id: 'r3',
+    name: 'Марат',
+    username: 'marat_k',
+    rating: 4,
+    text: 'Хорошие цены, но пришлось немного подождать доставку. В целом доволен.',
+    date: '2026-06-02',
+  },
+];
+
 const COUNTRY_META = {
   IN: { flag: '🇮🇳', label: 'Индия' },
   JP: { flag: '🇯🇵', label: 'Япония' },
@@ -347,6 +468,8 @@ const state = {
   models: [],
   countries: [],
   route: { page: 'home', productId: null },
+  showReviewForm: false,
+  reviewDraft: { name: '', rating: 5, text: '' },
 };
 
 function formatPrice(price) {
@@ -357,6 +480,12 @@ function pluralize(n) {
   if (mod10 === 1 && mod100 !== 11) return 'товар';
   if ([2,3,4].includes(mod10) && ![12,13,14].includes(mod100)) return 'товара';
   return 'товаров';
+}
+function pluralizeReviews(n) {
+  const mod10 = n % 10, mod100 = n % 100;
+  if (mod10 === 1 && mod100 !== 11) return 'отзыв';
+  if ([2,3,4].includes(mod10) && ![12,13,14].includes(mod100)) return 'отзыва';
+  return 'отзывов';
 }
 function matchesQuery(p, q) {
   if (!q.trim()) return true;
@@ -469,11 +598,17 @@ function renderHome() {
 
   return `
     <div class="header">
-      <div class="brand">
-        <div class="brand-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+      <div class="brand-row">
+        <div class="brand">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+          </div>
+          <h1>RmStore</h1>
         </div>
-        <h1>RmStore</h1>
+        <button class="reviews-nav-btn" id="go-reviews">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Отзывы
+        </button>
       </div>
       <p class="subtitle">Актуальные цены на Apple</p>
       <p class="updated">Обновлено ${date}</p>
@@ -576,11 +711,171 @@ function renderDetail(productId) {
   `;
 }
 
+// ====================== РЕНДЕР: ОТЗЫВЫ ======================
+function starsHtml(rating, size) {
+  size = size || 13;
+  let out = '';
+  for (let i = 1; i <= 5; i++) {
+    const filled = i <= rating;
+    out += `<svg width="${size}" height="${size}" viewBox="0 0 24 24" class="${filled ? 'star-filled' : 'star-empty'}" stroke-width="1.5" stroke="currentColor">
+      <path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+    </svg>`;
+  }
+  return out;
+}
+
+function reviewCardHtml(r, i) {
+  const initial = r.name.trim().charAt(0).toUpperCase() || '?';
+  const nameHtml = r.username
+    ? `<a class="review-name" href="https://t.me/${escapeHtml(r.username)}" data-profile-link="${escapeHtml(r.username)}">
+         ${escapeHtml(r.name)}
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+       </a>`
+    : `<span class="review-name">${escapeHtml(r.name)}</span>`;
+  const date = new Date(r.date).toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' });
+
+  return `
+    <div class="review-card" style="animation-delay:${Math.min(i * 0.04, 0.3)}s">
+      <div class="review-head">
+        <div class="review-avatar">${initial}</div>
+        <div class="review-name-col">
+          ${nameHtml}
+          <div class="review-date">${date}</div>
+        </div>
+        <div class="review-stars">${starsHtml(r.rating)}</div>
+      </div>
+      <p class="review-text">${escapeHtml(r.text)}</p>
+    </div>
+  `;
+}
+
+function renderReviews() {
+  const avg = REVIEWS.length
+    ? (REVIEWS.reduce((sum, r) => sum + r.rating, 0) / REVIEWS.length).toFixed(1)
+    : null;
+
+  const list = REVIEWS.length === 0
+    ? `<div class="empty">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+         <p>Пока нет отзывов. Будьте первым!</p>
+       </div>`
+    : REVIEWS.slice().reverse().map((r, i) => reviewCardHtml(r, i)).join('');
+
+  const formOrButton = state.showReviewForm ? reviewFormHtml() : `
+    <button class="leave-review-btn" id="open-review-form">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      Оставить отзыв
+    </button>
+  `;
+
+  return `
+    <div class="reviews-page">
+      <button class="back-link" id="back-btn-top">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+        Назад
+      </button>
+
+      <div class="reviews-title-row">
+        <h1>Отзывы клиентов</h1>
+        ${avg ? `<span class="reviews-avg">${starsHtml(Math.round(Number(avg)), 15)} ${avg} · ${REVIEWS.length} ${pluralizeReviews(REVIEWS.length)}</span>` : ''}
+      </div>
+
+      ${list}
+      ${formOrButton}
+    </div>
+    <div class="toast" id="toast"></div>
+  `;
+}
+
+function reviewFormHtml() {
+  const tgUser = tg && tg.initDataUnsafe && tg.initDataUnsafe.user ? tg.initDataUnsafe.user : null;
+  const prefillName = state.reviewDraft.name || (tgUser ? [tgUser.first_name, tgUser.last_name].filter(Boolean).join(' ') : '');
+
+  return `
+    <div class="review-form">
+      <label>Ваше имя</label>
+      <input type="text" id="review-name" placeholder="Как вас представить" value="${escapeHtml(prefillName)}" />
+
+      <label>Оценка</label>
+      <div class="star-picker" id="star-picker">
+        ${[1,2,3,4,5].map(n => `
+          <button type="button" class="star-pick-btn" data-star="${n}">
+            <svg viewBox="0 0 24 24" class="${n <= state.reviewDraft.rating ? 'star-filled' : 'star-empty'}" stroke-width="1.5" stroke="currentColor">
+              <path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </button>
+        `).join('')}
+      </div>
+
+      <label>Ваш отзыв</label>
+      <textarea id="review-text" placeholder="Расскажите, как прошёл заказ">${escapeHtml(state.reviewDraft.text)}</textarea>
+
+      <div class="review-form-actions">
+        <button class="btn-cancel" id="cancel-review">Отмена</button>
+        <button class="btn-submit" id="submit-review">Отправить</button>
+      </div>
+    </div>
+  `;
+}
+
+function showToast(message) {
+  const el = document.getElementById('toast');
+  if (!el) return;
+  el.textContent = message;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 2600);
+}
+
+function submitReview() {
+  const nameInput = document.getElementById('review-name');
+  const textInput = document.getElementById('review-text');
+  const name = nameInput.value.trim();
+  const text = textInput.value.trim();
+  const rating = state.reviewDraft.rating;
+
+  if (!name || !text) {
+    showToast('Заполните имя и текст отзыва');
+    return;
+  }
+
+  const tgUser = tg && tg.initDataUnsafe && tg.initDataUnsafe.user ? tg.initDataUnsafe.user : null;
+  const usernameLine = tgUser && tgUser.username ? ('@' + tgUser.username) : 'без username';
+  const stars = '⭐'.repeat(rating);
+
+  const message = [
+    '📝 Новый отзыв на RmStore',
+    'Имя: ' + name,
+    'Telegram: ' + usernameLine,
+    'Оценка: ' + stars + ' (' + rating + '/5)',
+    'Текст: ' + text,
+  ].join('\n');
+
+  // Копируем в буфер обмена, чтобы владелец мог получить готовый текст —
+  // без бэкенда это самый надёжный способ передать отзыв.
+  const finish = () => {
+    haptic('success');
+    showToast('Скопировано! Вставьте текст в чат и отправьте');
+    state.showReviewForm = false;
+    state.reviewDraft = { name: '', rating: 5, text: '' };
+    setTimeout(() => openOrderChat(), 400);
+    render();
+  };
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(message).then(finish).catch(finish);
+  } else {
+    finish();
+  }
+}
+
 // ====================== РОУТИНГ И РЕНДЕР ======================
 function render() {
   const app = document.getElementById('app');
   if (state.route.page === 'detail') {
     app.innerHTML = renderDetail(state.route.productId);
+    if (tg) tg.BackButton.show();
+  } else if (state.route.page === 'reviews') {
+    app.innerHTML = renderReviews();
     if (tg) tg.BackButton.show();
   } else {
     app.innerHTML = renderHome();
@@ -592,6 +887,7 @@ function render() {
 function goHome() {
   haptic('tap');
   state.route = { page: 'home', productId: null };
+  state.showReviewForm = false;
   location.hash = '';
   render();
 }
@@ -599,6 +895,12 @@ function goDetail(id) {
   haptic('select');
   state.route = { page: 'detail', productId: id };
   location.hash = 'product/' + id;
+  render();
+}
+function goReviews() {
+  haptic('select');
+  state.route = { page: 'reviews', productId: null };
+  location.hash = 'reviews';
   render();
 }
 
@@ -638,6 +940,56 @@ function attachEvents() {
     document.querySelectorAll('[data-product-id]').forEach(card => {
       card.addEventListener('click', () => goDetail(card.getAttribute('data-product-id')));
     });
+
+    const reviewsNavBtn = document.getElementById('go-reviews');
+    if (reviewsNavBtn) reviewsNavBtn.addEventListener('click', goReviews);
+  } else if (state.route.page === 'reviews') {
+    const backTop = document.getElementById('back-btn-top');
+    if (backTop) backTop.addEventListener('click', goHome);
+
+    document.querySelectorAll('[data-profile-link]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        haptic('tap');
+        const username = link.getAttribute('data-profile-link');
+        if (tg) tg.openTelegramLink('https://t.me/' + username);
+        else window.open('https://t.me/' + username, '_blank', 'noopener,noreferrer');
+      });
+    });
+
+    const openFormBtn = document.getElementById('open-review-form');
+    if (openFormBtn) openFormBtn.addEventListener('click', () => {
+      haptic('tap');
+      state.showReviewForm = true;
+      render();
+    });
+
+    if (state.showReviewForm) {
+      const nameInput = document.getElementById('review-name');
+      const textInput = document.getElementById('review-text');
+      nameInput.addEventListener('input', (e) => { state.reviewDraft.name = e.target.value; });
+      textInput.addEventListener('input', (e) => { state.reviewDraft.text = e.target.value; });
+
+      document.querySelectorAll('[data-star]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          haptic('tap');
+          state.reviewDraft.rating = Number(btn.getAttribute('data-star'));
+          state.reviewDraft.name = document.getElementById('review-name').value;
+          state.reviewDraft.text = document.getElementById('review-text').value;
+          render();
+        });
+      });
+
+      const cancelBtn = document.getElementById('cancel-review');
+      if (cancelBtn) cancelBtn.addEventListener('click', () => {
+        haptic('tap');
+        state.showReviewForm = false;
+        render();
+      });
+
+      const submitBtn = document.getElementById('submit-review');
+      if (submitBtn) submitBtn.addEventListener('click', submitReview);
+    }
   } else {
     const backTop = document.getElementById('back-btn-top');
     const backBottom = document.getElementById('back-btn-bottom');
@@ -657,6 +1009,8 @@ function routeFromHash() {
   const hash = location.hash.replace('#', '');
   if (hash.startsWith('product/')) {
     state.route = { page: 'detail', productId: hash.replace('product/', '') };
+  } else if (hash === 'reviews') {
+    state.route = { page: 'reviews', productId: null };
   } else {
     state.route = { page: 'home', productId: null };
   }
