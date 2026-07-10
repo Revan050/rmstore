@@ -318,75 +318,107 @@
 // ====================== ДАННЫЕ КАТАЛОГА ======================
 // Единственное место, которое нужно редактировать для изменения цен.
 const CATALOG = {
-  "updatedAt": "2026-07-09",
+  "updatedAt": "2026-07-10",
   "products": [
-    { "id": "airpods4anc-us", "model": "AirPods 4 ANC", "storage": "-", "color": "White", "colorHex": "#F2F2F0", "price": 18900, "country": "US", "status": null },
-    { "id": "airpodspro3-hk", "model": "AirPods Pro 3", "storage": "-", "color": "White", "colorHex": "#F2F2F0", "price": 21400, "country": "HK", "status": null },
-    { "id": "airpodspro3-in", "model": "AirPods Pro 3", "storage": "-", "color": "White", "colorHex": "#F2F2F0", "price": 21400, "country": "IN", "status": null },
+    { "id": "airpods4anc-us", "model": "AirPods 4 ANC", "storage": "-", "color": "White", "colorHex": "#F2F2F0", "price": 14000, "country": "US", "status": null },
+    { "id": "airpodspro3-hk", "model": "AirPods Pro 3", "storage": "-", "color": "White", "colorHex": "#F2F2F0", "price": 16300, "country": "HK", "status": null },
+    { "id": "airpodspro3-in", "model": "AirPods Pro 3", "storage": "-", "color": "White", "colorHex": "#F2F2F0", "price": 16300, "country": "IN", "status": null },
 
-    { "id": "ip15-128-black-in", "model": "iPhone 15", "storage": "128GB", "color": "Black", "colorHex": "#2B2B2E", "price": 53500, "country": "IN", "status": null },
-    { "id": "ip15-128-blue-in", "model": "iPhone 15", "storage": "128GB", "color": "Blue", "colorHex": "#7C90A5", "price": 53700, "country": "IN", "status": null },
-    { "id": "ip15-128-blue-vn", "model": "iPhone 15", "storage": "128GB", "color": "Blue", "colorHex": "#7C90A5", "price": 53700, "country": "VN", "status": null },
-    { "id": "ip15plus-256-green-mx", "model": "iPhone 15 Plus", "storage": "256GB", "color": "Green", "colorHex": "#A3B79A", "price": 61000, "country": "MX", "status": null },
+    { "id": "watchse3-44-starlight-jp", "model": "Apple Watch SE 3", "storage": "44mm S/M", "color": "Starlight", "colorHex": "#F0EAD6", "price": 22000, "country": "JP", "status": null },
+    { "id": "watchs11-42-jetblack-us", "model": "Apple Watch S11", "storage": "42mm S/M", "color": "Jet Black", "colorHex": "#1B1B1D", "price": 26500, "country": "US", "status": null },
+    { "id": "watchs11-42-rosegold-us", "model": "Apple Watch S11", "storage": "42mm S/M", "color": "Rose Gold", "colorHex": "#E3B7B0", "price": 26800, "country": "US", "status": null },
 
-    { "id": "ip16e-256-white-jp", "model": "iPhone 16e", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 57800, "country": "JP", "status": null },
+    { "id": "ipad11-a16-128-blue-us", "model": "iPad 11", "storage": "128GB Wi-Fi", "color": "Blue", "colorHex": "#7C9CC4", "price": 32800, "country": "US", "status": null },
 
-    { "id": "ip16-128-teal-in", "model": "iPhone 16", "storage": "128GB", "color": "Teal", "colorHex": "#4FA8A0", "price": 58000, "country": "IN", "status": null },
-    { "id": "ip16-128-ultramarine-in", "model": "iPhone 16", "storage": "128GB", "color": "Ultramarine", "colorHex": "#4A6FE3", "price": 58900, "country": "IN", "status": null },
+    { "id": "sams25-256-mint-in", "model": "Samsung Galaxy S25", "storage": "12/256GB", "color": "Mint", "colorHex": "#A9D3C4", "price": 44300, "country": "IN", "status": null },
 
-    { "id": "ip16promax-256-desert-us", "model": "iPhone 16 Pro Max", "storage": "256GB", "color": "Desert", "colorHex": "#C9A876", "price": 87700, "country": "US", "status": null },
-    { "id": "ip16promax-256-natural-us", "model": "iPhone 16 Pro Max", "storage": "256GB", "color": "Natural", "colorHex": "#B8AFA0", "price": 90400, "country": "US", "status": null },
-    { "id": "ip16promax-256-white-us", "model": "iPhone 16 Pro Max", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 89700, "country": "US", "status": null },
+    { "id": "sams25ultra-256-black-ae", "model": "Samsung Galaxy S25 Ultra", "storage": "12/256GB", "color": "Black", "colorHex": "#201F22", "price": 60000, "country": "AE", "status": null },
+    { "id": "sams25ultra-256-whitesilver-in", "model": "Samsung Galaxy S25 Ultra", "storage": "12/256GB", "color": "White Silver", "colorHex": "#E7E7E5", "price": 59600, "country": "IN", "status": null },
+    { "id": "sams25ultra-256-whitesilver-my", "model": "Samsung Galaxy S25 Ultra", "storage": "12/256GB", "color": "White Silver", "colorHex": "#E7E7E5", "price": 59799, "country": "MY", "status": null },
+    { "id": "sams25ultra-256-blue-ae", "model": "Samsung Galaxy S25 Ultra", "storage": "12/256GB", "color": "Blue", "colorHex": "#4E6E9E", "price": 62200, "country": "AE", "status": null },
+    { "id": "sams25ultra-256-blue-in", "model": "Samsung Galaxy S25 Ultra", "storage": "12/256GB", "color": "Blue", "colorHex": "#4E6E9E", "price": 62200, "country": "IN", "status": null },
+    { "id": "sams25ultra-256-blue-my", "model": "Samsung Galaxy S25 Ultra", "storage": "12/256GB", "color": "Blue", "colorHex": "#4E6E9E", "price": 62200, "country": "MY", "status": null },
+    { "id": "sams25ultra-256-gray-my", "model": "Samsung Galaxy S25 Ultra", "storage": "12/256GB", "color": "Gray", "colorHex": "#8B8D91", "price": 59300, "country": "MY", "status": null },
+    { "id": "sams25ultra-512-black-eu", "model": "Samsung Galaxy S25 Ultra", "storage": "12/512GB", "color": "Black", "colorHex": "#201F22", "price": 65800, "country": "EU", "status": null },
 
-    { "id": "ip17-256-lavender-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Lavender", "colorHex": "#C9C2DC", "price": 68000, "country": "IN", "status": "active" },
-    { "id": "ip17-256-sage-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Sage", "colorHex": "#AEB99A", "price": 68000, "country": "IN", "status": "active" },
-    { "id": "ip17-256-black-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Black", "colorHex": "#2B2B2E", "price": 69200, "country": "IN", "status": "active" },
-    { "id": "ip17-256-mistblue-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Mist Blue", "colorHex": "#8FA8B8", "price": 68000, "country": "IN", "status": "active" },
-    { "id": "ip17-256-white-in-active", "model": "iPhone 17", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 67700, "country": "IN", "status": "active" },
-    { "id": "ip17-256-sage-in", "model": "iPhone 17", "storage": "256GB", "color": "Sage", "colorHex": "#AEB99A", "price": 71500, "country": "IN", "status": null },
-    { "id": "ip17-256-mistblue-in", "model": "iPhone 17", "storage": "256GB", "color": "Mist Blue", "colorHex": "#8FA8B8", "price": 71400, "country": "IN", "status": null },
-    { "id": "ip17-256-white-in", "model": "iPhone 17", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 71000, "country": "IN", "status": null },
+    { "id": "sams26-256-violet-eu", "model": "Samsung Galaxy S26", "storage": "12/256GB", "color": "Violet", "colorHex": "#8A7CA8", "price": 52000, "country": "EU", "status": null },
+    { "id": "sams26-256-violet-in", "model": "Samsung Galaxy S26", "storage": "12/256GB", "color": "Violet", "colorHex": "#8A7CA8", "price": 51800, "country": "IN", "status": null },
+    { "id": "sams26-256-black-in", "model": "Samsung Galaxy S26", "storage": "12/256GB", "color": "Black", "colorHex": "#201F22", "price": 50600, "country": "IN", "status": null },
+    { "id": "sams26-256-black-eu", "model": "Samsung Galaxy S26", "storage": "12/256GB", "color": "Black", "colorHex": "#201F22", "price": 50600, "country": "EU", "status": null },
+    { "id": "sams26-256-silvershadow-in", "model": "Samsung Galaxy S26", "storage": "12/256GB", "color": "Silver Shadow", "colorHex": "#A9ABAF", "price": 54000, "country": "IN", "status": null },
 
-    { "id": "ip17pro-256-orange-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 89000, "country": "JP", "status": null },
-    { "id": "ip17pro-256-blue-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 89500, "country": "JP", "status": null },
-    { "id": "ip17pro-256-silver-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 90600, "country": "JP", "status": null },
-    { "id": "ip17pro-256-orange-hk", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 98600, "country": "HK", "status": null },
-    { "id": "ip17pro-256-blue-hk", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 98900, "country": "HK", "status": null },
-    { "id": "ip17pro-256-silver-hk", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 98700, "country": "HK", "status": null },
+    { "id": "sams26ultra-256-violet-ae", "model": "Samsung Galaxy S26 Ultra", "storage": "12/256GB", "color": "Violet", "colorHex": "#8A7CA8", "price": 70000, "country": "AE", "status": null },
+    { "id": "sams26ultra-512-violet-eu", "model": "Samsung Galaxy S26 Ultra", "storage": "12/512GB", "color": "Violet", "colorHex": "#8A7CA8", "price": 85300, "country": "EU", "status": null },
+    { "id": "sams26ultra-512-black-my", "model": "Samsung Galaxy S26 Ultra", "storage": "12/512GB", "color": "Black", "colorHex": "#201F22", "price": 86800, "country": "MY", "status": null },
+    { "id": "sams26ultra-512-black-eu", "model": "Samsung Galaxy S26 Ultra", "storage": "12/512GB", "color": "Black", "colorHex": "#201F22", "price": 87000, "country": "EU", "status": null },
+    { "id": "sams26ultra-512-blue-eu", "model": "Samsung Galaxy S26 Ultra", "storage": "12/512GB", "color": "Blue", "colorHex": "#4E6E9E", "price": 86300, "country": "EU", "status": null },
+    { "id": "sams26ultra-512-blue-my", "model": "Samsung Galaxy S26 Ultra", "storage": "12/512GB", "color": "Blue", "colorHex": "#4E6E9E", "price": 86300, "country": "MY", "status": null },
+    { "id": "sams26ultra-1tb-black-eu", "model": "Samsung Galaxy S26 Ultra", "storage": "16/1TB", "color": "Black", "colorHex": "#201F22", "price": 101800, "country": "EU", "status": null },
+    { "id": "sams26ultra-1tb-blue-eu", "model": "Samsung Galaxy S26 Ultra", "storage": "16/1TB", "color": "Blue", "colorHex": "#4E6E9E", "price": 100700, "country": "EU", "status": null },
+    { "id": "sams26ultra-1tb-white-eu", "model": "Samsung Galaxy S26 Ultra", "storage": "16/1TB", "color": "White", "colorHex": "#F1F1EF", "price": 102800, "country": "EU", "status": null },
+    { "id": "sams26ultra-1tb-pinkgold-eu", "model": "Samsung Galaxy S26 Ultra", "storage": "16/1TB", "color": "Pink Gold", "colorHex": "#E4B8B0", "price": 102500, "country": "EU", "status": null },
+    { "id": "sams26ultra-1tb-silver-eu", "model": "Samsung Galaxy S26 Ultra", "storage": "16/1TB", "color": "Silver", "colorHex": "#C7C9CC", "price": 106000, "country": "EU", "status": null },
 
-    { "id": "ip17pro-512-orange-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 107000, "country": "JP", "status": null },
-    { "id": "ip17pro-512-blue-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 107000, "country": "JP", "status": null },
-    { "id": "ip17pro-512-silver-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 108000, "country": "JP", "status": null },
-    { "id": "ip17pro-512-blue-hk", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 114900, "country": "HK", "status": null },
-    { "id": "ip17pro-512-silver-hk", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 117000, "country": "HK", "status": null },
+    { "id": "ip15-128-blue-vn", "model": "iPhone 15", "storage": "128GB", "color": "Blue", "colorHex": "#7C90A5", "price": 48200, "country": "VN", "status": null },
 
-    { "id": "ip17pro-1tb-orange-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 124000, "country": "JP", "status": null },
-    { "id": "ip17pro-1tb-blue-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 123500, "country": "JP", "status": null },
-    { "id": "ip17pro-1tb-silver-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 124500, "country": "JP", "status": null },
-    { "id": "ip17pro-1tb-orange-hk", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 128200, "country": "HK", "status": null },
-    { "id": "ip17pro-1tb-blue-hk", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 129000, "country": "HK", "status": null },
+    { "id": "ip15plus-256-green-mx", "model": "iPhone 15 Plus", "storage": "256GB", "color": "Green", "colorHex": "#A3B79A", "price": 56000, "country": "MX", "status": null },
 
-    { "id": "ip17max-256-orange-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 96300, "country": "JP", "status": null },
-    { "id": "ip17max-256-blue-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 96300, "country": "JP", "status": null },
-    { "id": "ip17max-256-silver-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 97000, "country": "JP", "status": null },
-    { "id": "ip17max-256-orange-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 108300, "country": "HK", "status": null },
-    { "id": "ip17max-256-blue-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 108500, "country": "HK", "status": null },
-    { "id": "ip17max-256-silver-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 109700, "country": "HK", "status": null },
+    { "id": "ip16e-256-white-jp", "model": "iPhone 16e", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 43500, "country": "JP", "status": null },
 
-    { "id": "ip17max-512-orange-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 114700, "country": "JP", "status": null },
-    { "id": "ip17max-512-blue-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 114000, "country": "JP", "status": null },
-    { "id": "ip17max-512-silver-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 114500, "country": "JP", "status": null },
-    { "id": "ip17max-512-orange-hk", "model": "iPhone 17 Max", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 126500, "country": "HK", "status": null },
-    { "id": "ip17max-512-blue-hk", "model": "iPhone 17 Max", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 124400, "country": "HK", "status": null },
+    { "id": "ip16-128-teal-in", "model": "iPhone 16", "storage": "128GB", "color": "Teal", "colorHex": "#4FA8A0", "price": 52700, "country": "IN", "status": null },
 
-    { "id": "ip17max-1tb-orange-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 129500, "country": "JP", "status": null },
-    { "id": "ip17max-1tb-blue-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 130500, "country": "JP", "status": null },
-    { "id": "ip17max-1tb-silver-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 129500, "country": "JP", "status": null },
-    { "id": "ip17max-1tb-orange-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 144000, "country": "HK", "status": null },
-    { "id": "ip17max-1tb-blue-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 144000, "country": "HK", "status": null },
-    { "id": "ip17max-1tb-silver-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 143000, "country": "HK", "status": null },
+    { "id": "ip16promax-256-desert-us", "model": "iPhone 16 Pro Max", "storage": "256GB", "color": "Desert", "colorHex": "#C9A876", "price": 86600, "country": "US", "status": null },
+    { "id": "ip16promax-256-natural-us", "model": "iPhone 16 Pro Max", "storage": "256GB", "color": "Natural", "colorHex": "#B8AFA0", "price": 80000, "country": "US", "status": null },
+    { "id": "ip16promax-256-white-us", "model": "iPhone 16 Pro Max", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 85000, "country": "US", "status": null },
 
-    { "id": "ip17max-2tb-cosmicorange-jp", "model": "iPhone 17 Max", "storage": "2TB", "color": "Cosmic Orange", "colorHex": "#C96A3E", "price": 146000, "country": "JP", "status": null }
+    { "id": "ip17-256-lavender-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Lavender", "colorHex": "#C9C2DC", "price": 63800, "country": "IN", "status": "active" },
+    { "id": "ip17-256-sage-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Sage", "colorHex": "#AEB99A", "price": 63000, "country": "IN", "status": "active" },
+    { "id": "ip17-256-black-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Black", "colorHex": "#2B2B2E", "price": 64000, "country": "IN", "status": "active" },
+    { "id": "ip17-256-mistblue-in-active", "model": "iPhone 17", "storage": "256GB", "color": "Mist Blue", "colorHex": "#8FA8B8", "price": 63000, "country": "IN", "status": "active" },
+    { "id": "ip17-256-white-in-active", "model": "iPhone 17", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 62700, "country": "IN", "status": "active" },
+    { "id": "ip17-256-lavender-in", "model": "iPhone 17", "storage": "256GB", "color": "Lavender", "colorHex": "#C9C2DC", "price": 67800, "country": "IN", "status": null },
+    { "id": "ip17-256-sage-in", "model": "iPhone 17", "storage": "256GB", "color": "Sage", "colorHex": "#AEB99A", "price": 65800, "country": "IN", "status": null },
+    { "id": "ip17-256-black-in", "model": "iPhone 17", "storage": "256GB", "color": "Black", "colorHex": "#2B2B2E", "price": 66000, "country": "IN", "status": null },
+    { "id": "ip17-256-mistblue-in", "model": "iPhone 17", "storage": "256GB", "color": "Mist Blue", "colorHex": "#8FA8B8", "price": 65400, "country": "IN", "status": null },
+    { "id": "ip17-256-white-in", "model": "iPhone 17", "storage": "256GB", "color": "White", "colorHex": "#F2F2F0", "price": 65800, "country": "IN", "status": null },
+
+    { "id": "ip17pro-256-orange-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 83300, "country": "JP", "status": null },
+    { "id": "ip17pro-256-blue-jp", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 84000, "country": "JP", "status": null },
+    { "id": "ip17pro-256-orange-hk", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 93000, "country": "HK", "status": null },
+    { "id": "ip17pro-256-blue-hk", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 92500, "country": "HK", "status": null },
+    { "id": "ip17pro-256-silver-hk", "model": "iPhone 17 Pro", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 92800, "country": "HK", "status": null },
+
+    { "id": "ip17pro-512-orange-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 101000, "country": "JP", "status": null },
+    { "id": "ip17pro-512-blue-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 101500, "country": "JP", "status": null },
+    { "id": "ip17pro-512-silver-jp", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 101499, "country": "JP", "status": null },
+    { "id": "ip17pro-512-blue-hk", "model": "iPhone 17 Pro", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 109900, "country": "HK", "status": null },
+
+    { "id": "ip17pro-1tb-orange-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 117000, "country": "JP", "status": null },
+    { "id": "ip17pro-1tb-blue-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 116500, "country": "JP", "status": null },
+    { "id": "ip17pro-1tb-silver-jp", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 119000, "country": "JP", "status": null },
+    { "id": "ip17pro-1tb-orange-hk", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 122000, "country": "HK", "status": null },
+    { "id": "ip17pro-1tb-blue-hk", "model": "iPhone 17 Pro", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 123499, "country": "HK", "status": null },
+
+    { "id": "ip17max-256-orange-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 90000, "country": "JP", "status": null },
+    { "id": "ip17max-256-blue-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 90500, "country": "JP", "status": null },
+    { "id": "ip17max-256-silver-jp", "model": "iPhone 17 Max", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 91000, "country": "JP", "status": null },
+    { "id": "ip17max-256-orange-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Orange", "colorHex": "#C96A3E", "price": 102500, "country": "HK", "status": null },
+    { "id": "ip17max-256-blue-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Blue", "colorHex": "#4C6178", "price": 102500, "country": "HK", "status": null },
+    { "id": "ip17max-256-silver-hk", "model": "iPhone 17 Max", "storage": "256GB", "color": "Silver", "colorHex": "#D6D6D8", "price": 104000, "country": "HK", "status": null },
+
+    { "id": "ip17max-512-orange-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 109000, "country": "JP", "status": null },
+    { "id": "ip17max-512-blue-jp", "model": "iPhone 17 Max", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 108000, "country": "JP", "status": null },
+    { "id": "ip17max-512-orange-hk", "model": "iPhone 17 Max", "storage": "512GB", "color": "Orange", "colorHex": "#C96A3E", "price": 120000, "country": "HK", "status": null },
+    { "id": "ip17max-512-blue-hk", "model": "iPhone 17 Max", "storage": "512GB", "color": "Blue", "colorHex": "#4C6178", "price": 118200, "country": "HK", "status": null },
+
+    { "id": "ip17max-1tb-orange-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 123500, "country": "JP", "status": null },
+    { "id": "ip17max-1tb-blue-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 124000, "country": "JP", "status": null },
+    { "id": "ip17max-1tb-silver-jp", "model": "iPhone 17 Max", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 126000, "country": "JP", "status": null },
+    { "id": "ip17max-1tb-orange-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Orange", "colorHex": "#C96A3E", "price": 138800, "country": "HK", "status": null },
+    { "id": "ip17max-1tb-blue-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Blue", "colorHex": "#4C6178", "price": 137000, "country": "HK", "status": null },
+    { "id": "ip17max-1tb-silver-hk", "model": "iPhone 17 Max", "storage": "1TB", "color": "Silver", "colorHex": "#D6D6D8", "price": 137000, "country": "HK", "status": null },
+
+    { "id": "ip17max-2tb-cosmicorange-jp", "model": "iPhone 17 Max", "storage": "2TB", "color": "Cosmic Orange", "colorHex": "#C96A3E", "price": 142000, "country": "JP", "status": null }
   ]
 };
 
@@ -430,6 +462,9 @@ const COUNTRY_META = {
   US: { flag: '🇺🇸', label: 'США' },
   VN: { flag: '🇻🇳', label: 'Вьетнам' },
   MX: { flag: '🇲🇽', label: 'Мексика' },
+  AE: { flag: '🇦🇪', label: 'ОАЭ' },
+  MY: { flag: '🇲🇾', label: 'Малайзия' },
+  EU: { flag: '🇪🇺', label: 'Евросоюз' },
 };
 const STATUS_META = {
   'active': { label: 'Актив', cls: 'badge-success' },
@@ -437,7 +472,14 @@ const STATUS_META = {
   'open-box': { label: 'Открытый неактив', cls: 'badge-muted' },
   'scratched-box': { label: 'Царапаные коробки', cls: 'badge-danger' },
 };
-const MODEL_FILTERS = ['iPhone 15', 'iPhone 15 Plus', 'iPhone 16e', 'iPhone 16', 'iPhone 16 Pro Max', 'iPhone 17', 'iPhone 17 Pro', 'iPhone 17 Max', 'AirPods 4 ANC', 'AirPods Pro 3'];
+const MODEL_FILTERS = [
+  'iPhone 15', 'iPhone 15 Plus', 'iPhone 16e', 'iPhone 16', 'iPhone 16 Pro Max',
+  'iPhone 17', 'iPhone 17 Pro', 'iPhone 17 Max',
+  'AirPods 4 ANC', 'AirPods Pro 3',
+  'Apple Watch SE 3', 'Apple Watch S11',
+  'iPad 11',
+  'Samsung Galaxy S25', 'Samsung Galaxy S25 Ultra', 'Samsung Galaxy S26', 'Samsung Galaxy S26 Ultra',
+];
 
 // ====================== TELEGRAM WEBAPP ======================
 const tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
@@ -507,9 +549,19 @@ function escapeHtml(str) {
 // ====================== ИЛЛЮСТРАЦИЯ УСТРОЙСТВА (SVG) ======================
 // Оригинальная графика вместо официальных фото Apple (авторские права).
 
-// Определяем, iPhone это или AirPods, чтобы выбрать нужную иллюстрацию.
+// Определяем категорию товара по названию модели, чтобы выбрать нужную иллюстрацию.
 function isAirPods(model) {
   return model.indexOf('AirPods') === 0;
+}
+function isWatch(model) {
+  return model.indexOf('Apple Watch') === 0;
+}
+function isIpad(model) {
+  return model.indexOf('iPad') === 0;
+}
+// Топовые модели (Pro/Max/Ultra) рисуем с тройным блоком камер.
+function hasProCamera(model) {
+  return /Pro|Max|Ultra/.test(model);
 }
 
 // Иллюстрация кейса AirPods с наушниками — своя оригинальная графика.
@@ -518,60 +570,179 @@ function airpodsGlyph(extraClass) {
   <svg viewBox="0 0 240 480" class="${extraClass || ''}" role="img" aria-label="Иллюстрация AirPods">
     <defs>
       <linearGradient id="apcase" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#F5F5F7" stop-opacity="0.98"/>
-        <stop offset="100%" stop-color="#E4E4E7" stop-opacity="0.9"/>
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+        <stop offset="55%" stop-color="#F2F2F4" stop-opacity="0.97"/>
+        <stop offset="100%" stop-color="#DDDDE1" stop-opacity="0.92"/>
       </linearGradient>
       <linearGradient id="apshine" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
+        <stop offset="0%" stop-color="#fff" stop-opacity="0.65"/>
         <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
       </linearGradient>
+      <radialGradient id="apshadow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#000" stop-opacity="0.22"/>
+        <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+      </radialGradient>
     </defs>
+    <ellipse cx="120" cy="326" rx="66" ry="10" fill="url(#apshadow)"/>
     <!-- кейс -->
-    <rect x="55" y="150" width="130" height="170" rx="40" fill="url(#apcase)" stroke="rgba(0,0,0,0.1)" stroke-width="2"/>
-    <rect x="55" y="150" width="130" height="80" rx="40" fill="url(#apshine)"/>
-    <circle cx="120" cy="175" r="4" fill="rgba(0,0,0,0.25)"/>
-    <rect x="112" y="148" width="16" height="6" rx="3" fill="rgba(0,0,0,0.12)"/>
+    <rect x="55" y="150" width="130" height="170" rx="40" fill="url(#apcase)" stroke="rgba(0,0,0,0.12)" stroke-width="1.5"/>
+    <rect x="55" y="150" width="130" height="90" rx="40" fill="url(#apshine)"/>
+    <rect x="61" y="156" width="10" height="140" rx="5" fill="#fff" opacity="0.5"/>
+    <circle cx="120" cy="175" r="4.5" fill="#3a3a3d"/>
+    <circle cx="119" cy="174" r="1.4" fill="#8a8a8f"/>
+    <rect x="112" y="147" width="16" height="7" rx="3.5" fill="rgba(0,0,0,0.15)"/>
     <!-- наушники внутри -->
-    <g opacity="0.95">
-      <rect x="80" y="200" width="26" height="60" rx="13" fill="#fff" stroke="rgba(0,0,0,0.08)"/>
-      <rect x="88" y="192" width="10" height="30" rx="5" fill="#fff" stroke="rgba(0,0,0,0.08)"/>
-      <rect x="134" y="200" width="26" height="60" rx="13" fill="#fff" stroke="rgba(0,0,0,0.08)"/>
-      <rect x="142" y="192" width="10" height="30" rx="5" fill="#fff" stroke="rgba(0,0,0,0.08)"/>
+    <g>
+      <rect x="80" y="200" width="26" height="62" rx="13" fill="#fff" stroke="rgba(0,0,0,0.1)"/>
+      <rect x="83" y="205" width="8" height="30" rx="4" fill="#fff" opacity="0.9" stroke="rgba(0,0,0,0.05)"/>
+      <rect x="88" y="192" width="10" height="30" rx="5" fill="#f2f2f3" stroke="rgba(0,0,0,0.1)"/>
+      <rect x="134" y="200" width="26" height="62" rx="13" fill="#fff" stroke="rgba(0,0,0,0.1)"/>
+      <rect x="137" y="205" width="8" height="30" rx="4" fill="#fff" opacity="0.9" stroke="rgba(0,0,0,0.05)"/>
+      <rect x="142" y="192" width="10" height="30" rx="5" fill="#f2f2f3" stroke="rgba(0,0,0,0.1)"/>
     </g>
   </svg>`;
 }
 
-function deviceGlyph(colorHex, isPro, extraClass) {
-  const gid = 'g' + colorHex.replace('#', '');
-  const cam = isPro
-    ? `<rect x="42" y="34" width="76" height="76" rx="22" fill="rgba(0,0,0,0.35)"/>
-       <circle cx="62" cy="54" r="14" fill="#111"/><circle cx="62" cy="54" r="8" fill="#2b2b2e"/>
-       <circle cx="98" cy="54" r="14" fill="#111"/><circle cx="98" cy="54" r="8" fill="#2b2b2e"/>
-       <circle cx="62" cy="90" r="14" fill="#111"/><circle cx="62" cy="90" r="8" fill="#2b2b2e"/>`
-    : `<rect x="44" y="36" width="52" height="52" rx="18" fill="rgba(0,0,0,0.3)"/>
-       <circle cx="58" cy="50" r="12" fill="#111"/><circle cx="58" cy="50" r="6.5" fill="#2b2b2e"/>
-       <circle cx="82" cy="74" r="12" fill="#111"/><circle cx="82" cy="74" r="6.5" fill="#2b2b2e"/>`;
+// Иллюстрация Apple Watch — корпус с колёсиком, боковой кнопкой и ремешком.
+function watchGlyph(colorHex, extraClass) {
+  const gid = 'w' + colorHex.replace('#', '');
+  return `
+  <svg viewBox="0 0 240 480" class="${extraClass || ''}" role="img" aria-label="Иллюстрация часов">
+    <defs>
+      <linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
+        <stop offset="16%" stop-color="${colorHex}" stop-opacity="0.98"/>
+        <stop offset="100%" stop-color="${colorHex}" stop-opacity="0.72"/>
+      </linearGradient>
+      <linearGradient id="${gid}band" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#000" stop-opacity="0.16"/>
+        <stop offset="50%" stop-color="#000" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#000" stop-opacity="0.16"/>
+      </linearGradient>
+      <radialGradient id="${gid}shadow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#000" stop-opacity="0.24"/>
+        <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <ellipse cx="120" cy="463" rx="60" ry="9" fill="url(#${gid}shadow)"/>
+    <!-- ремешок сверху/снизу -->
+    <rect x="86" y="10" width="68" height="90" rx="24" fill="url(#${gid}band)"/>
+    <rect x="86" y="380" width="68" height="90" rx="24" fill="url(#${gid}band)"/>
+    <line x1="95" y1="30" x2="145" y2="30" stroke="rgba(0,0,0,0.1)" stroke-width="2"/>
+    <line x1="95" y1="440" x2="145" y2="440" stroke="rgba(0,0,0,0.1)" stroke-width="2"/>
+    <!-- корпус -->
+    <rect x="58" y="130" width="124" height="220" rx="46" fill="url(#${gid})" stroke="rgba(0,0,0,0.14)" stroke-width="1.5"/>
+    <rect x="59" y="131" width="122" height="12" rx="6" fill="#fff" opacity="0.35"/>
+    <rect x="72" y="146" width="96" height="188" rx="30" fill="#0a0a0b"/>
+    <path d="M78 152 L130 152 L84 260 L78 260 Z" fill="#fff" opacity="0.05"/>
+    <!-- индикация циферблата -->
+    <circle cx="120" cy="240" r="34" fill="none" stroke="${colorHex}" stroke-opacity="0.35" stroke-width="2"/>
+    <!-- колёсико и кнопка -->
+    <rect x="182" y="200" width="11" height="34" rx="4" fill="rgba(0,0,0,0.32)"/>
+    <circle cx="187" cy="217" r="7" fill="rgba(0,0,0,0.18)"/>
+    <rect x="182" y="248" width="9" height="22" rx="4" fill="rgba(0,0,0,0.22)"/>
+  </svg>`;
+}
+
+// Иллюстрация iPad — плоский планшет с камерой в углу и бликом стекла.
+function ipadGlyph(colorHex, extraClass) {
+  const gid = 'i' + colorHex.replace('#', '');
+  return `
+  <svg viewBox="0 0 240 480" class="${extraClass || ''}" role="img" aria-label="Иллюстрация iPad">
+    <defs>
+      <linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
+        <stop offset="14%" stop-color="${colorHex}" stop-opacity="0.98"/>
+        <stop offset="100%" stop-color="${colorHex}" stop-opacity="0.7"/>
+      </linearGradient>
+      <linearGradient id="${gid}shine" x1="0" y1="0" x2="0.2" y2="1">
+        <stop offset="0%" stop-color="#fff" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+      </linearGradient>
+      <radialGradient id="${gid}shadow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#000" stop-opacity="0.22"/>
+        <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <ellipse cx="120" cy="418" rx="72" ry="9" fill="url(#${gid}shadow)"/>
+    <rect x="30" y="70" width="180" height="340" rx="26" fill="url(#${gid})" stroke="rgba(0,0,0,0.14)" stroke-width="1.5"/>
+    <rect x="31" y="71" width="178" height="8" rx="4" fill="#fff" opacity="0.3"/>
+    <rect x="42" y="82" width="156" height="316" rx="16" fill="#0a0a0b"/>
+    <rect x="42" y="82" width="156" height="316" rx="16" fill="url(#${gid}shine)"/>
+    <path d="M50 92 L120 92 L58 240 L50 240 Z" fill="#fff" opacity="0.04"/>
+    <circle cx="120" cy="76" r="3.5" fill="#000" opacity="0.85"/>
+    <circle cx="119" cy="75" r="1" fill="#3a4a5c" opacity="0.8"/>
+  </svg>`;
+}
+
+function isSamsung(model) {
+  return model.indexOf('Samsung') === 0;
+}
+
+function deviceGlyph(colorHex, isPro, extraClass, brand) {
+  const gid = 'g' + colorHex.replace('#', '') + (brand || 'a');
+  const samsung = brand === 'samsung';
+
+  // Камера: у Apple — общий блок с "таблеткой" Dynamic Island,
+  // у Samsung — отдельные линзы без общей плашки и вырез-камера по центру сверху.
+  const cam = samsung
+    ? (isPro
+        ? `<circle cx="60" cy="46" r="15" fill="#111"/><circle cx="60" cy="46" r="9" fill="#2b2b2e"/><circle cx="60" cy="43" r="2.4" fill="#8fa3b8" opacity="0.85"/>
+           <circle cx="60" cy="80" r="15" fill="#111"/><circle cx="60" cy="80" r="9" fill="#2b2b2e"/><circle cx="60" cy="77" r="2.4" fill="#8fa3b8" opacity="0.85"/>
+           <circle cx="60" cy="114" r="13" fill="#111"/><circle cx="60" cy="114" r="7.5" fill="#2b2b2e"/><circle cx="60" cy="111.5" r="2" fill="#8fa3b8" opacity="0.85"/>`
+        : `<circle cx="58" cy="48" r="14" fill="#111"/><circle cx="58" cy="48" r="8.5" fill="#2b2b2e"/><circle cx="58" cy="45" r="2.2" fill="#8fa3b8" opacity="0.85"/>
+           <circle cx="58" cy="80" r="13" fill="#111"/><circle cx="58" cy="80" r="7.5" fill="#2b2b2e"/><circle cx="58" cy="77.5" r="2" fill="#8fa3b8" opacity="0.85"/>`)
+    : (isPro
+        ? `<rect x="42" y="34" width="76" height="76" rx="22" fill="rgba(0,0,0,0.4)"/>
+           <circle cx="62" cy="54" r="14" fill="#111"/><circle cx="62" cy="54" r="8" fill="#2b2b2e"/><circle cx="59" cy="51" r="2.2" fill="#a9c2d6" opacity="0.9"/>
+           <circle cx="98" cy="54" r="14" fill="#111"/><circle cx="98" cy="54" r="8" fill="#2b2b2e"/><circle cx="95" cy="51" r="2.2" fill="#a9c2d6" opacity="0.9"/>
+           <circle cx="62" cy="90" r="14" fill="#111"/><circle cx="62" cy="90" r="8" fill="#2b2b2e"/><circle cx="59" cy="87" r="2.2" fill="#a9c2d6" opacity="0.9"/>`
+        : `<rect x="44" y="36" width="52" height="52" rx="18" fill="rgba(0,0,0,0.35)"/>
+           <circle cx="58" cy="50" r="12" fill="#111"/><circle cx="58" cy="50" r="6.5" fill="#2b2b2e"/><circle cx="55.5" cy="47.5" r="1.8" fill="#a9c2d6" opacity="0.9"/>
+           <circle cx="82" cy="74" r="12" fill="#111"/><circle cx="82" cy="74" r="6.5" fill="#2b2b2e"/><circle cx="79.5" cy="71.5" r="1.8" fill="#a9c2d6" opacity="0.9"/>`);
+
+  const frontCam = samsung
+    ? `<circle cx="120" cy="50" r="6" fill="#000" opacity="0.92"/><circle cx="118.5" cy="48.5" r="1.6" fill="#3a4a5c" opacity="0.8"/>`
+    : `<rect x="94" y="44" width="52" height="18" rx="9" fill="#000" opacity="0.92"/><circle cx="104" cy="53" r="3" fill="#1c2733" opacity="0.9"/>`;
+
   return `
   <svg viewBox="0 0 240 480" class="${extraClass || ''}" role="img" aria-label="Иллюстрация устройства">
     <defs>
       <linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="${colorHex}" stop-opacity="0.95"/>
-        <stop offset="100%" stop-color="${colorHex}" stop-opacity="0.75"/>
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+        <stop offset="14%" stop-color="${colorHex}" stop-opacity="0.98"/>
+        <stop offset="60%" stop-color="${colorHex}" stop-opacity="0.88"/>
+        <stop offset="100%" stop-color="${colorHex}" stop-opacity="0.68"/>
       </linearGradient>
-      <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#fff" stop-opacity="0.35"/>
-        <stop offset="40%" stop-color="#fff" stop-opacity="0.05"/>
+      <linearGradient id="${gid}shine" x1="0" y1="0" x2="0.3" y2="1">
+        <stop offset="0%" stop-color="#fff" stop-opacity="0.4"/>
+        <stop offset="35%" stop-color="#fff" stop-opacity="0.06"/>
         <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
       </linearGradient>
+      <radialGradient id="${gid}shadow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#000" stop-opacity="0.25"/>
+        <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+      </radialGradient>
     </defs>
-    <rect x="20" y="10" width="200" height="460" rx="46" fill="url(#${gid})" stroke="rgba(0,0,0,0.12)" stroke-width="2"/>
-    <rect x="32" y="24" width="176" height="432" rx="36" fill="#0b0b0c"/>
-    <rect x="32" y="24" width="176" height="432" rx="36" fill="url(#shine)"/>
-    <rect x="94" y="44" width="52" height="18" rx="9" fill="#000" opacity="0.9"/>
+    <ellipse cx="120" cy="472" rx="70" ry="7" fill="url(#${gid}shadow)"/>
+    <rect x="20" y="10" width="200" height="460" rx="46" fill="url(#${gid})" stroke="rgba(0,0,0,0.14)" stroke-width="1.5"/>
+    <rect x="21" y="11" width="198" height="6" rx="3" fill="#fff" opacity="0.35"/>
+    <rect x="32" y="24" width="176" height="432" rx="36" fill="#0a0a0b"/>
+    <rect x="32" y="24" width="176" height="432" rx="36" fill="url(#${gid}shine)"/>
+    <path d="M40 40 L110 40 L46 230 L40 230 Z" fill="#fff" opacity="0.04"/>
+    ${frontCam}
     ${cam}
-    <rect x="16" y="140" width="4" height="50" rx="2" fill="rgba(0,0,0,0.25)"/>
-    <rect x="220" y="120" width="4" height="70" rx="2" fill="rgba(0,0,0,0.25)"/>
+    <rect x="16" y="140" width="4" height="50" rx="2" fill="rgba(0,0,0,0.28)"/>
+    <rect x="220" y="120" width="4" height="70" rx="2" fill="rgba(0,0,0,0.28)"/>
   </svg>`;
+}
+
+// Выбирает нужную иллюстрацию по категории товара.
+function productGlyph(p, extraClass) {
+  if (isAirPods(p.model)) return airpodsGlyph(extraClass);
+  if (isWatch(p.model)) return watchGlyph(p.colorHex, extraClass);
+  if (isIpad(p.model)) return ipadGlyph(p.colorHex, extraClass);
+  return deviceGlyph(p.colorHex, hasProCamera(p.model), extraClass, isSamsung(p.model) ? 'samsung' : 'apple');
 }
 
 // ====================== РЕНДЕР: ГЛАВНАЯ ======================
@@ -637,8 +808,7 @@ function renderHome() {
 
 function cardHtml(p, i) {
   const country = COUNTRY_META[p.country];
-  const isPro = p.model.includes('Pro');
-  const glyph = isAirPods(p.model) ? airpodsGlyph('card-glyph') : deviceGlyph(p.colorHex, isPro, 'card-glyph');
+  const glyph = productGlyph(p, 'card-glyph');
   const badge = p.status ? `<span class="badge ${STATUS_META[p.status].cls}">${STATUS_META[p.status].label}</span>` : '';
   return `
     <button class="card" data-product-id="${p.id}" style="animation-delay:${Math.min(i * 0.03, 0.3)}s">
@@ -661,8 +831,7 @@ function renderDetail(productId) {
     return `<div class="detail-page"><p style="text-align:center;color:var(--muted)">Товар не найден.</p></div>`;
   }
   const country = COUNTRY_META[p.country];
-  const isPro = p.model.includes('Pro');
-  const glyph = isAirPods(p.model) ? airpodsGlyph('') : deviceGlyph(p.colorHex, isPro, '');
+  const glyph = productGlyph(p, '');
   const statusRow = p.status
     ? `<div class="detail-row"><span class="label">Статус</span><span class="badge ${STATUS_META[p.status].cls}">${STATUS_META[p.status].label}</span></div>`
     : `<div class="detail-row"><span class="label">Статус</span><span class="value">Новый, запечатан</span></div>`;
